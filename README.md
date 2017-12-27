@@ -10,9 +10,6 @@ Please change the directory inside this file by changing the varPath variable.
 varPath ='...'
 os.chdir(varPath)
 
-Note: Also printed from this file is the omega variable which is the coefficient I use with inverse of width and height to calculate distance. I use the values calculated here and printed out as omega here for the second part of my program.
-
-omega = transposeMult2.dot(distarray2)
 
 Step 2: 
 
