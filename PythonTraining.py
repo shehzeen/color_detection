@@ -15,7 +15,7 @@ acc_pixel_num=0;
 folder = "ENTER TRAINING FOLDER WITH TRAINING FILES HERE"
 sumxxt = [(0,0,0),(0,0,0),(0,0,0)]
 
-file = open("Output_Mean_Cov2.text","a")
+file = open("Output_Mean_Cov.text","a")
 
 def display(img,title):
     cv2.imshow(title,img)
@@ -50,9 +50,6 @@ for filename in os.listdir(folder):
     for i in xrange(height):
         for j in xrange(width):
             somearray = (imCrop[i,j,:]).astype(float)
-            #print somearray
-            #print 'TIRESHAPE'
-            #print np.multiply.outer(somearray,somearray)
             xxt = np.multiply.outer(somearray,somearray)
             sumxxt = np.multiply.outer(somearray,somearray) + sumxxt
             
