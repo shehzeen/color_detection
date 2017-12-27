@@ -56,10 +56,7 @@ for filename in os.listdir(folder):
             xxt = np.multiply.outer(somearray,somearray)
             sumxxt = np.multiply.outer(somearray,somearray) + sumxxt
             
-            #print 'OUTER'
-            #print np.outer(T1,T1)
-            #covnew = (T1*(T1.reshape(3,1))) +covnew
-            #print covnew
+
 
 #print 'SUMXXT'
 #print sumxxt
